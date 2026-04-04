@@ -1,0 +1,22 @@
+.flutter-sdk/
+android-sdk/
+
+# Flutter and Dart generated files
+**/.dart_tool/
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/.pub/
+**/build/
+**/coverage/
+
+# IDE and OS files
+**/.idea/
+**/*.iml
+**/.DS_Store
+
+# Android generated artifacts
+**/android/.gradle/
+**/android/local.properties
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
