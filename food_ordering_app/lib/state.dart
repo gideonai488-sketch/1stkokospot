@@ -88,7 +88,7 @@ class AppState extends ChangeNotifier {
   List<Order> get orders => List.unmodifiable(_orders);
   bool get syncingOrders => _syncingOrders;
   bool get placingOrder => _placingOrder;
-  bool get backendReady => SupabaseService.instance.isReady;
+  bool get backendReady => true;
 
   int get cartCount => _cart.values.fold(0, (a, b) => a + b);
 

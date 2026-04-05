@@ -18,10 +18,10 @@ class ProductDetailsScreen extends StatelessWidget {
     final qty = state.quantityFor(item.id);
 
     return Scaffold(
-      backgroundColor: const Color(0xFF9E1B1B),
+      backgroundColor: const Color(0xFFFDFDFD),
       appBar: AppBar(
-        backgroundColor: const Color(0xFF9E1B1B),
-        foregroundColor: Colors.white,
+        backgroundColor: Colors.white,
+        foregroundColor: const Color(0xFF9E1B1B),
         elevation: 0,
         title: const Text('Product Details'),
       ),
@@ -128,7 +128,17 @@ class ProductDetailsScreen extends StatelessWidget {
               ),
             ),
             Container(
-              color: const Color(0xFF9E1B1B),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.85),
+                borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.04),
+                    blurRadius: 16,
+                    offset: const Offset(0, -2),
+                  ),
+                ],
+              ),
               padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
               child: Row(
                 children: [
